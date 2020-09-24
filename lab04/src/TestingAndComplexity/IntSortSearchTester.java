@@ -3,7 +3,11 @@ package TestingAndComplexity;
 public class IntSortSearchTester {
 
 	public static void linearSearchTester() {
+		int[] a = new int[1];
+		a[0] = 5;
+		int x = 5;
 		//o	Array containing one element only, and the value being searched for is the element in the array
+		
 		//o	Array containing one element only, and the value being searched for is NOT the element in the array
 		//o	Array containing two unequal elements, and the value being searched for is one of the elements of the array
 		//o	Array containing two unequal elements, and the value being searched for is NOT ANY of the elements of the array
