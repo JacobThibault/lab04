@@ -3,8 +3,7 @@ import java.util.Arrays;
 public class IntSortSearchTester {
 
 	public static void linearSearchTester() {
-		// o Array containing one element only, and the value being searched for is the
-		// element in the array
+		// o Array containing one element only, and the value being searched for is the only element in the array
 		int[] a = new int[1];
 		a[0] = 5;
 		int x = 5;
@@ -63,20 +62,18 @@ public class IntSortSearchTester {
 	}
 
 	public static void binarySearchTester() {
-		System.out.println("BINARY");
-		// o Array containing one element only, and the value being searched for is the
-		// element in the array
+		// o Array containing one element only, and the value being searched for is the only element in the array
 		int[] a = new int[1];
 		a[0] = 5;
 		int x = 5;
 		int expectedOutput = 0;
-		int actualOutput = IntSortSearch.linearSearch(a, x);
+		int actualOutput = IntSortSearch.binarySearch(a, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing one element only, and the value being searched for is NOT
 		// the element in the array
 		x = 4;
 		expectedOutput = 0;
-		actualOutput = IntSortSearch.linearSearch(a, x);
+		actualOutput = IntSortSearch.binarySearch(a, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing two unequal elements, and the value being searched for is
 		// one of the elements of the array
@@ -85,13 +82,13 @@ public class IntSortSearchTester {
 		b[1] = 7;
 		x = 7;
 		expectedOutput = 1;
-		actualOutput = IntSortSearch.linearSearch(b, x);
+		actualOutput = IntSortSearch.binarySearch(b, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing two unequal elements, and the value being searched for is
 		// NOT ANY of the elements of the array
 		x = 9;
 		expectedOutput = 0;
-		actualOutput = IntSortSearch.linearSearch(b, x);
+		actualOutput = IntSortSearch.binarySearch(b, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing 3 elements, and the value being searched for is the very
 		// first element of the array
@@ -101,25 +98,25 @@ public class IntSortSearchTester {
 		c[2] = 54;
 		x = 12;
 		expectedOutput = 0;
-		actualOutput = IntSortSearch.linearSearch(c, x);
+		actualOutput = IntSortSearch.binarySearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing 3 elements, and the value being searched for is the very
 		// last element of the array
 		x = 54;
 		expectedOutput = 2;
-		actualOutput = IntSortSearch.linearSearch(c, x);
+		actualOutput = IntSortSearch.binarySearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing 3 elements, and the value being searched for is the middle
 		// element
 		x = 34;
 		expectedOutput = 1;
-		actualOutput = IntSortSearch.linearSearch(c, x);
+		actualOutput = IntSortSearch.binarySearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing 3 elements, and the value being searched for is NOT ANY of
 		// the elements in the array
 		x = 93;
 		expectedOutput = 0;
-		actualOutput = IntSortSearch.linearSearch(c, x);
+		actualOutput = IntSortSearch.binarySearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 	}
 
@@ -209,5 +206,4 @@ public class IntSortSearchTester {
 		IntSortSearchTester.binarySearchTester();
 		IntSortSearchTester.sortTester();
 	}
-
 }
