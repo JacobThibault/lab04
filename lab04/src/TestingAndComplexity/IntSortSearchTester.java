@@ -63,6 +63,7 @@ public class IntSortSearchTester {
 	}
 
 	public static void binarySearchTester() {
+		System.out.println("BINARY");
 		// o Array containing one element only, and the value being searched for is the
 		// element in the array
 		int[] a = new int[1];
@@ -139,8 +140,8 @@ public class IntSortSearchTester {
 		b[1] = 5;
 		int[] expectedOutput2 = new int[2];
 		int[] actualOutput2 = new int[2];
-		expectedOutput2[0] = 10;
-		expectedOutput2[1] = 5;
+		expectedOutput2[0] = 5;
+		expectedOutput2[1] = 10;
 		IntSortSearch.selectionSort(b);
 		actualOutput2 = b;
 		System.out.println(Arrays.equals(actualOutput2, expectedOutput2));
@@ -162,9 +163,9 @@ public class IntSortSearchTester {
 		d[0] = 95;
 		d[1] = 12;
 		d[2] = 5;
-		expectedOutput3[0] = 95;
+		expectedOutput3[0] = 5;
 		expectedOutput3[1] = 12;
-		expectedOutput3[2] = 5;
+		expectedOutput3[2] = 95;
 		IntSortSearch.selectionSort(d);
 		actualOutput3 = d;
 		System.out.println(Arrays.equals(actualOutput3, expectedOutput3));
@@ -184,8 +185,8 @@ public class IntSortSearchTester {
 		f[0] = -4;
 		f[1] = 0;
 		f[2] = 5;
-		expectedOutput3[0] = 0;
-		expectedOutput3[1] = -4;
+		expectedOutput3[0] = -4;
+		expectedOutput3[1] = 0;
 		expectedOutput3[2] = 5;
 		IntSortSearch.selectionSort(f);
 		actualOutput3 = f;
