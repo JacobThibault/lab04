@@ -40,7 +40,7 @@ public class IntSortSearch {
 
 //--------------------------------------------------
 	public static void selectionSort(int[] a) {
-		int pos; // position of the smallest elelemt
+		int pos; // position of the smallest element
 		int temp; // temp variable for swap
 		numComps = 0;
 
