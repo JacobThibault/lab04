@@ -13,7 +13,7 @@ public class IntSortSearchTester {
 		// o Array containing one element only, and the value being searched for is NOT
 		// the element in the array
 		x = 4;
-		expectedOutput = 0;
+		expectedOutput = -1;
 		actualOutput = IntSortSearch.linearSearch(a, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing two unequal elements, and the value being searched for is
@@ -38,7 +38,7 @@ public class IntSortSearchTester {
 		c[1] = 34;
 		c[2] = 54;
 		x = 12;
-		expectedOutput = 0;
+		expectedOutput = -1;
 		actualOutput = IntSortSearch.linearSearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing 3 elements, and the value being searched for is the very
@@ -56,7 +56,7 @@ public class IntSortSearchTester {
 		// o Array containing 3 elements, and the value being searched for is NOT ANY of
 		// the elements in the array
 		x = 93;
-		expectedOutput = 2;
+		expectedOutput = -1;
 		actualOutput = IntSortSearch.linearSearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 	}
@@ -72,7 +72,7 @@ public class IntSortSearchTester {
 		// o Array containing one element only, and the value being searched for is NOT
 		// the element in the array
 		x = 4;
-		expectedOutput = 0;
+		expectedOutput = -1;
 		actualOutput = IntSortSearch.binarySearch(a, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing two unequal elements, and the value being searched for is
@@ -87,7 +87,7 @@ public class IntSortSearchTester {
 		// o Array containing two unequal elements, and the value being searched for is
 		// NOT ANY of the elements of the array
 		x = 9;
-		expectedOutput = 0;
+		expectedOutput = -1;
 		actualOutput = IntSortSearch.binarySearch(b, x);
 		System.out.println(actualOutput == expectedOutput);
 		// o Array containing 3 elements, and the value being searched for is the very
@@ -115,7 +115,7 @@ public class IntSortSearchTester {
 		// o Array containing 3 elements, and the value being searched for is NOT ANY of
 		// the elements in the array
 		x = 93;
-		expectedOutput = 0;
+		expectedOutput = -1;
 		actualOutput = IntSortSearch.binarySearch(c, x);
 		System.out.println(actualOutput == expectedOutput);
 	}
